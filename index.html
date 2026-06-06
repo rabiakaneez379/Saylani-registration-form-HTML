@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saylani Registration Form</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    padding:30px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+    width:180px;
+    display:block;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    color:green;
+    margin:20px 0;
+}
+
+.row{
+    display:flex;
+    gap:20px;
+    margin-bottom:15px;
+}
+
+.input-group{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.checkbox{
+    margin:15px 0;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:green;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:darkgreen;
+}
+
+@media(max-width:768px){
+    .row{
+        flex-direction:column;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <img src="D:\Saylani html registration form\my-saylani-registration-html-form\download.png"
+    alt="Saylani Logo"
+    class="logo">
+
+    <h1>Saylani Registration Form</h1>
+
+    <form>
+
+        <div class="row">
+            <div class="input-group">
+                <label>Country</label>
+                <select required>
+                    <option>Select Country</option>
+                    <option>Pakistan</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>City</label>
+                <select required>
+                    <option>Select City</option>
+                    <option>Karachi</option>
+                    <option>Lahore</option>
+                    <option>Islamabad</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-group">
+                <label>Course</label>
+                <select required>
+                    <option>Select Course</option>
+                    <option>Web & App Development</option>
+                    <option>Graphic Designing</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Campus</label>
+                <select required>
+                    <option>Select Campus</option>
+                    <option>Bahadurabad</option>
+                    <option>Gulshan</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Father Name</label>
+                <input type="text" placeholder="Enter father name" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="abc@gmail.com" required>
+            </div>
+
+            <div class="input-group">
+                <label>Phone</label>
+                <input type="tel" placeholder="03XXXXXXXXX" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-group">
+                <label>CNIC</label>
+                <input type="text" placeholder="xxxxx-xxxxxxx-x" required>
+            </div>
+
+            <div class="input-group">
+                <label>Date of Birth</label>
+                <input type="date" required>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>Address</label>
+            <textarea rows="4" placeholder="Enter Address"></textarea>
+        </div>
+
+        <br>
+
+        <div class="input-group">
+            <label>Upload Picture</label>
+            <input type="file">
+        </div>
+
+        <div class="checkbox">
+            <input type="checkbox" required>
+            I agree to Terms & Conditions
+        </div>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
